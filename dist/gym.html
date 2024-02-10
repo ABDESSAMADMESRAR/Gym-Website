@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <!--=============== REMIXICON ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--=============== CSS tailwindcss. ===============-->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!--=============== CSS tailwindcss. ===============-->
+    <link rel="stylesheet" href="/dist/index.css" />
+    <title>Register Now</title>
+  </head>
+  <body>
+    <style>
+      .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 130px;
+      }
+
+      .container2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 100px;
+        margin-top: 150px;
+      }
+
+      .container2:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: url("img/bg.jpg") no-repeat center;
+        background-size: cover;
+        filter: blur(50px);
+        z-index: -1;
+      }
+      .contact-box {
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        max-width: 850px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: hsl(180, 12%, 8%);
+        box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+      }
+
+      .left {
+        background: url("/images/home-img.png") no-repeat center;
+        background-size: contain;
+        height: 100%;
+      }
+
+      .right {
+        padding: 25px 40px;
+      }
+
+      .field {
+        width: 100%;
+        margin-right: 20px;
+        background: transparent;
+        padding: 0.5rem 1rem;
+        margin-bottom: 22px;
+	transition: .3s;
+        outline: none;
+
+        border: none;
+        color: var(--text-color);
+      }
+
+  
+
+      .btn {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background-color: #2ecc71;
+        color: #fff;
+        font-size: 1.1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #27ae60;
+      }
+
+      .field:focus {
+        border: 2px solid rgba(30, 85, 250, 0.47);
+        background-color: #fff;
+      }
+
+      @media screen and (max-width: 880px) {
+        .contact-box {
+          grid-template-columns: 1fr;
+        }
+        .left {
+          height: 200px;
+        }
+      }
+      .footer-message{
+        position: absolute;
+        transform: translateY(1rem);
+      }
+    </style>
+
+    <header class="header fixed" id="header">
+      <nav class="nav container flex justify-between items-center">
+        <a href="index.html" class="nav--logo">
+          <img src="/images/logo-nav.png" alt="" /> <b class="uppercase">gym</b>
+        </a>
+        <div class="nav--meun" id="nav-meun">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="item--link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Program" class="item--link">Program</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Choose Us" class="item--link">Choose Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Pricing" class="item--link"> Pricing </a>
+            </li>
+            <div class="nav-link">
+              <button
+                class="text-black relative px-8 py-2 rounded-md bg-white isolation-auto z-10 border-2 border-lime-500 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden hover:text-white before:hover:duration-700"
+              >
+                Register Now
+              </button>
+            </div>
+          </ul>
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-circle-fill"></i>
+          </div>
+        </div>
+        <div class="toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container1">
+      <div class="container">
+        <div class="section--date">
+          <h2 class="section__subtitle text-center mb-6">Hello again</h2>
+          <div class="section__titles">
+            <h1 class="section__title-border">Make</h1>
+            <h1 class="section__title">a choice</h1>
+          </div>
+          <br />
+        </div>
+        <div class="pricing--container grid">
+          <article class="pricing--card">
+            <header class="pricing--header">
+              <div class="hhh">
+                <img src="/images/pricing1.png" alt="" class="pricing--img" />
+              </div>
+              <h1 class="pricing__title">BASIC PACKAGE</h1>
+              <h2 class="pricing__number">$120</h2>
+            </header>
+
+            <ul class="pricing__List">
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>5 Days In A Week
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>01 Sweatshirt
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line pricing__item-opacity"></i>01
+                Bottle of Protein
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line pricing__item-opacity"></i
+                >Access to Videos
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line pricing__item-opacity"></i>
+                Muscle Stretching
+              </li>
+            </ul>
+            <div
+              id="btm"
+              class="w-full h-40 flex items-center justify-center cursor-pointer"
+            >
+              <div
+                class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 dark:bg-gray-700 dark:text-white dark:hover:text-gray-200 dark:shadow-none group"
+              >
+                <span
+                  class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out group-hover:h-full"
+                  style="background: hsl(79, 72%, 55%)"
+                ></span>
+                <span
+                  class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    fill="none"
+                    class="w-5 h-5 text-green-400"
+                  >
+                    <path
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </span>
+                <span
+                  class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    fill="none"
+                    class="w-5 h-5"
+                    style="color: hsl(180, 4%, 98%)"
+                  >
+                    <path
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </span>
+                <span
+                  class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200"
+                  >Purchase Now</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="pricing--card pricing__item-active">
+            <header class="pricing--header">
+              <div class="hhh">
+                <img src="/images/pricing2.png" alt="" class="pricing--img" />
+              </div>
+              <h1 class="pricing__title">PREMIUM PACKAGE</h1>
+              <h2 class="pricing__number">$240</h2>
+            </header>
+
+            <ul class="pricing__List">
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>5 Days In A Week
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>01 Sweatshirt
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>01 Bottle of Protein
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line pricing__item-opacity"></i
+                >Access to Videos
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line pricing__item-opacity"></i>
+                Muscle Stretching
+              </li>
+            </ul>
+            <div
+              id="btm2"
+              class="w-full h-40 flex items-center justify-center cursor-pointer"
+            >
+              <div
+                class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 dark:bg-gray-700 dark:text-white dark:hover:text-gray-200 dark:shadow-none group"
+              >
+                <span
+                  class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out group-hover:h-full"
+                  style="background: hsl(79, 72%, 55%)"
+                ></span>
+                <span
+                  class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    fill="none"
+                    class="w-5 h-5 text-green-400"
+                  >
+                    <path
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </span>
+                <span
+                  class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    fill="none"
+                    class="w-5 h-5"
+                    style="color: hsl(180, 4%, 98%)"
+                  >
+                    <path
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </span>
+                <span
+                  class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200"
+                  >Purchase Now</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="pricing--card">
+            <header class="pricing--header">
+              <div class="hhh">
+                <img src="/images/pricing3.png" alt="" class="pricing--img" />
+              </div>
+              <h1 class="pricing__title">DIAMOND PACKAGE</h1>
+              <h2 class="pricing__number">$420</h2>
+            </header>
+
+            <ul class="pricing__List">
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>5 Days In A Week
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>01 Sweatshirt
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>01 Bottle of Protein
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>Access to Videos
+              </li>
+              <li class="pricing__item">
+                <i class="ri-checkbox-circle-line"></i>
+                Muscle Stretching
+              </li>
+            </ul>
+            <div
+              id="btm3"
+              class="w-full h-40 flex items-center justify-center cursor-pointer"
+            >
+              <div
+                class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 dark:bg-gray-700 dark:text-white dark:hover:text-gray-200 dark:shadow-none group"
+              >
+                <span
+                  class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out group-hover:h-full"
+                  style="background: hsl(79, 72%, 55%)"
+                ></span>
+                <span
+                  class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    fill="none"
+                    class="w-5 h-5 text-green-400"
+                  >
+                    <path
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </span>
+                <span
+                  class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    fill="none"
+                    class="w-5 h-5"
+                    style="color: hsl(180, 4%, 98%)"
+                  >
+                    <path
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </span>
+                <span
+                  class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200"
+                  >Purchase Now</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="section__titles" style="position: relative; bottom: -150px">
+      <h1 class="section__title-border">personal</h1>
+      <h1 class="section__title">information</h1>
+    </div>
+
+    <div class="container2">
+      <div class="contact-box">
+        <div class="left"></div>
+        <form class="right" id="contact-footer">
+          <input type="text" name="First-name" class="field" placeholder="First name" id="contact-user" />
+          <input type="text" name="last-name" class="field" placeholder="last name" id="contact-user1"  />
+          <input type="text" name="email" class="field" placeholder="email"id="contact-user2"  />
+          <input type="text" name="Sex" class="field" placeholder="Sex" id="contact-user3"  />
+          <input type="text" name="Phone" class="field" placeholder="Phone" id="contact-user4"  />
+          <input type="text"  name="city"  class="field" placeholder="city" id="contact-user5"  /> 
+
+          <button class="btn">Send</button>
+          <p class="footer-message" id="contact-message"></p>
+        </form>
+    
+      </div>
+    
+    </div>
+          <!--========== SCROLL UP ==========-->
+<a href="" class="scrollup" id="scrollup">
+  <i class="ri-arrow-up-line"></i>
+</a>
+  </body>
+    <!--=============== EMAIL JS ===============-->
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="/dist/scrollreveal.min.js"></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="/dist/index.js"></script>
+  <script src="/dist/gym.js"></script>
+</html>
