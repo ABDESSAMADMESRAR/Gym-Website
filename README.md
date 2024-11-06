@@ -1,1 +1,1 @@
-![Gym ](https://github.com/ABDESSAMADMESRAR/Gym-Website/assets/130689222/5c467863-f3aa-42a2-92fd-23e201112ba7)
+![Gym](https://github.com/user-attachments/assets/17669e90-4a97-4cfc-8da2-894b1125c7b3)
